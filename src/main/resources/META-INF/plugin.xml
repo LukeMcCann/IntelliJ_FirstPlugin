@@ -1,11 +1,12 @@
 <idea-plugin>
     <id>org.planetdebug.first_plugin</id>
-    <name>Plugin display name here</name>
-    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+    <name>FirstPlugin</name>
+    <version>1.0-SNAPSHOT</version>
+    <vendor email="developer-lukemccann@outlook.com" url="http://www.planetdebug.com">PlanetDebug</vendor>
 
+    <!--Description must be over 40 chars-->
     <description><![CDATA[
-    Enter short description for your plugin here.<br>
-    <em>most HTML tags may be used</em>
+    Initial plugin development trial for implementing an object workbench.
     ]]></description>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
@@ -18,7 +19,16 @@
         <!-- Add your extensions here -->
     </extensions>
 
+    <!-- Actions allow plugins to add their own items to IDEA menus and toolbars
+    an action is a class derived from the AnAction class, Located at:
+    com.intellij.openapi.actionSystem.AnAction -->
+
     <actions>
         <!-- Add your actions here -->
+        <group id="FirstPlugin.HelloAction" text="FirstPlugin" description="About my plugin">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <action class="com.planetdebug.firstplugin.HelloAction" id="FirstPlugin.Actions.HelloAction" text="Say Hello" />
+            <action class="com.planetdebug.firstplugin.FileChooser" id="FirstPlugin.Actions.FileChooser" text="File Chooser..." />
+        </group>
     </actions>
 </idea-plugin>

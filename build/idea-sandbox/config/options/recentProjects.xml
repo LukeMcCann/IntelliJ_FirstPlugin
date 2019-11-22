@@ -1,0 +1,32 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="recentPaths">
+      <list>
+        <option value="F:/_Projects/test_project" />
+      </list>
+    </option>
+    <option name="openPaths">
+      <list>
+        <option value="F:/_Projects/test_project" />
+      </list>
+    </option>
+    <option name="lastPath" value="F:/_Projects/test_project" />
+    <option name="pid" value="" />
+    <option name="additionalInfo">
+      <map>
+        <entry key="F:/_Projects/test_project">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IC-192.7142.36" />
+              <option name="productionCode" value="IC" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1574452450900" />
+              <option name="buildTimestamp" value="1572328988931" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastProjectLocation" value="F:/_Projects" />
+  </component>
+</application>

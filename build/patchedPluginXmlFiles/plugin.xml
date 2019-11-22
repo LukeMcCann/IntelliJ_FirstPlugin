@@ -1,0 +1,21 @@
+<idea-plugin>
+  <change-notes>
+      Add change notes here.&lt;br&gt;
+      &lt;em&gt;most HTML tags may be used&lt;/em&gt;</change-notes>
+  <idea-version since-build="192.7142" until-build="192.*"/>
+  <id>org.planetdebug.first_plugin</id>
+  <name>FirstPlugin</name>
+  <version>1.0-SNAPSHOT</version>
+  <vendor email="developer-lukemccann@outlook.com" url="http://www.planetdebug.com">PlanetDebug</vendor>
+  <description>
+    Initial plugin development trial for implementing an object workbench.
+    </description>
+  <extensions defaultExtensionNs="com.intellij"/>
+  <actions>
+    <group id="FirstPlugin.HelloAction" text="FirstPlugin" description="About my plugin">
+      <add-to-group group-id="MainMenu" anchor="last"/>
+      <action class="com.planetdebug.firstplugin.HelloAction" id="FirstPlugin.Actions.HelloAction" text="Say Hello"/>
+      <action class="com.planetdebug.firstplugin.FileChooser" id="FirstPlugin.Actions.FileChooser" text="File Chooser..."/>
+    </group>
+  </actions>
+</idea-plugin>
