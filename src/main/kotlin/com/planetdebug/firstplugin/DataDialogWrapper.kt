@@ -26,6 +26,11 @@ class DataDialogWrapper: DialogWrapper(true)
     {
         init()
         title = "FirstPlugin Data"
+        val state = FirstPluginSettings.getInstance().state
+        if(state != null)
+        {
+            txtMode.text = state.mode
+        }
     }
 
     override fun createCenterPanel(): JComponent
@@ -52,7 +57,8 @@ class DataDialogWrapper: DialogWrapper(true)
         val mode = txtMode.text
         val username = txtUsername.text
         val password = txtPassword.password
-
+        val state = FirstPluginSettings.getInstance().state
+        state.mode = mode
         print("")
     }
 
