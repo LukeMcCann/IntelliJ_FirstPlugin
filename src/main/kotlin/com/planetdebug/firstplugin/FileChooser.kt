@@ -12,6 +12,13 @@ class FileChooser: AnAction()
 {
     override fun actionPerformed(e: AnActionEvent)
     {
+        val showInputDialog =
+        Messages.showInputDialog(e.project,"Enter your name", "FirstPlugin Data", Messages.getQuestionIcon())
+
+        Messages.showMessageDialog(e.project, "Your Name: $showInputDialog", "NamePlugin", Messages.getInformationIcon())
+    }
+
+    private fun showFileDialog(e: AnActionEvent) {
         // Messages.showMessageDialog(e.project, "C:file_here", "File Dialog", Messages.getInformationIcon())
 
         val fileChooserDescriptor = FileChooserDescriptor(
